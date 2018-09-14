@@ -1,0 +1,197 @@
+body {
+  /* background-color: #4D92A8; */
+  /* background-color: #34cfd7; */
+  /* background-color: rgba(149, 235, 210, 1); */
+  /* background-color: rgba(137, 202, 220, 1); */
+  /* background-color: #0292b7; */
+  background-color: #1AC8DB;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  /* color: #fff; */
+  /* color: #5B7485; */
+  margin: 0;
+  line-height: 1.6em;
+  text-align: center;
+  font-size: 18px;
+}
+
+#title {
+  display: block;
+  font-size: 2em;
+}
+
+#form-outer {
+  /* background-color: #eee; */
+  background-color: #DEE2EC;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  border-radius: 6px;
+}
+
+#description {
+  display: block;
+  /* margin-block-start: 1em; */
+  /* margin-block-end: 1em; */
+}
+
+#survey-form {
+  display: block;
+  margin-top: 0;
+}
+
+
+.row-table {
+  display: block;
+  /* margin-bottom: 20px; */
+  /* border: 1px black solid; */
+}
+
+.left-part {
+  /* Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. */
+  display: inline-block;
+  width: 45%;
+  text-align: right;
+  padding: 5px;
+  padding-right: 20px;
+  /* vertical-align: top; */
+  margin-top: 10px;
+  /* border: 1px black solid; */
+}
+
+.right-part {
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+  padding: 5px;
+  /* vertical-align: top; */
+  margin-top: 10px;
+  /* border: 1px black solid; */
+}
+
+.input-field {
+  width: 100%;
+  padding: 5px;
+  /* margin: 5px; */
+  height: 2.8em;
+  font-size: 1em;
+  border-radius: 3px;
+  border: 1px #c0c0c0 solid;
+  box-sizing: border-box;
+}
+
+.dropdown {
+  width: 70%;
+  padding: 5px;
+  /* margin: 5px; */
+  height: 2.8em;
+  font-size: 1em;
+  border-radius: 3px;
+  border: 1px #c0c0c0 solid;
+  box-sizing: border-box;
+}
+
+/* #name-label {
+  padding: 5px;
+  height: 2.8em;
+} */
+
+#recommend-left-part {
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+#list-radio {
+  padding: 0;
+  list-style:none;
+}
+
+.radio {
+  margin-bottom: 10px;
+}
+
+.radio-btn {
+  float: left;
+  margin-right: 8px;
+  height: 25px;
+  width: 16px;
+}
+
+#sitepart-left-part {
+  vertical-align: top;
+  padding-top: 0px;
+}
+
+#list-checkbox {
+  padding: 0;
+  list-style:none;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+}
+
+.checkbox-btn {
+  float: left;
+  margin-right: 8px;
+  height: 25px;
+  width: 16px;
+}
+
+#bettertodo-left-part {
+  vertical-align: top;
+  padding-top: 25px;
+}
+
+#comment-left-part {
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+#msg-area {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px #c0c0c0 solid;
+  box-sizing: border-box;
+}
+
+#submit  {
+  background-color: #0292b7;
+  color: #fff;
+  font-size: 1em;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media(max-width:600px) {
+
+  .left-part {
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  .right-part {
+    margin-top: 0px;
+  }
+
+  #recommend-left-part {
+    margin-top: 10px;
+  }
+   #list-radio {
+     margin: 0;
+   }
+  
+   #list-checkbox {
+     margin: 0;
+   }
+
+   #comment-left-part {
+    text-align: center;
+  }
+}

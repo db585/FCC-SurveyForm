@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey form</h1>
+  </header>
+</body>
+
+<div id="form-outer">
+  <p id="description">Please fill in the form to make us better</p>
+
+  <form action="https://codepen.com" method="POST" id="survey-form">
+    <div class="row-table">
+      <div class="left-part">
+        <label for="name" id="name-label">* Name</label>
+      </div>
+
+      <div class="right-part">
+        <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+
+    <div class="row-table">
+      <div class="left-part">
+        <label for="email" id="email-label">* Email</label>
+      </div>
+
+      <div class="right-part">
+        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+      </div>
+    </div>
+
+    <div class="row-table">
+      <div class="left-part">
+        <label for="age" id="number-label">* Email</label>
+      </div>
+
+      <div class="right-part">
+        <input type="number" name="age" id="number" class="input-field" min="18" max="100" placeholder="Age" required>
+      </div>
+    </div>
+
+    <div class="row-table">
+      <div class="left-part">
+        <label for="ocupation" id="label-ocupation">Your ocupation </label>
+      </div>
+
+      <div class="right-part">
+        <select name="ocupation" id="dropdown" class="dropdown">
+          <option value="Default">Select an option</option>
+          <option value="Student">Student</option>
+          <option value="Part-time job">Part-time job</option>
+          <option value="Full time job">Full time job</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row-table">
+      <div class="left-part" id="recommend-left-part">
+        <label for="recommend" id="label-recommend">Would You recommend our site to your friends </label>
+      </div>
+
+      <div class="right-part">
+        <ul id="list-radio">
+          <li class="radio">
+            <label for="radio-btn">Definitely</label>           
+            <input type="radio" class="radio-btn" name="radio-btn" value="1">
+          </li>
+          <li class="radio">
+            <label for="radio-btn">Maybe</label>
+              <input type="radio" class="radio-btn" name="radio-btn" value="2">
+          </li>
+          <li class="radio">
+            <label for="radio-btn">Not sure</label>
+            <input type="radio" class="radio-btn" name="radio-btn" value="3">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row-table">
+      <div class="left-part" id="sitepart-left-part">
+        <label for="sitepart" id="label-sitepart">What part of out site You like the most </label>
+      </div>
+
+      <div class="right-part">
+        <select name="sitepart" id="dropdown" class="dropdown">
+          <option value="Default">Select an option</option>
+          <option value="Home">Home</option>
+          <option value="About">About</option>
+          <option value="Services">Services</option>
+          <option value="Contacts">Contacts</option>
+        </select>
+      </div>
+      </div>
+
+      <div class="row-table">
+        <div class="left-part" id="bettertodo-left-part">
+          <label for="bettertodo" id="label-bettertodo">Things we need to be better (Check all that apply)</label>
+      </div>
+
+      <div class="right-part">
+        <ul id="list-checkbox">
+          <li class="checkbox">
+            <label for="checkbox-btn">Home page</label>           
+            <input type="checkbox" class="checkbox-btn" name="checkbox-btn" value="1">
+          </li>
+          <li class="checkbox">
+            <label for="checkbox-btn">Services page</label>
+              <input type="checkbox" class="checkbox-btn" name="checkbox-btn" value="2">
+          </li>
+          <li class="checkbox">
+            <label for="checkbox-btn">About page</label>
+            <input type="checkbox" class="checkbox-btn" name="checkbox-btn" value="3">
+          </li>
+          <li class="checkbox">
+            <label for="checkbox-btn">Contacts page</label>
+            <input type="checkbox" class="checkbox-btn" name="checkbox-btn" value="4">
+          </li>
+          <li class="checkbox">
+            <label for="checkbox-btn">New page</label>
+            <input type="checkbox" class="checkbox-btn" name="checkbox-btn" value="5">
+          </li>
+        </ul>
+      </div>
+
+      <div class="row-table">
+        <div class="left-part" id="comment-left-part">
+          <label for="msg" id="message">Leave your comment</label>
+        </div>
+  
+        <div class="right-part">
+          <textarea name="msg" id="msg-area" cols="35" rows="10"></textarea>
+        </div>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+  </form>
+</div><!-- form-outer -->
+
+<!--For dev purpose only  -->
+<div style="margin-top: 2000px"></div>
+</html>
